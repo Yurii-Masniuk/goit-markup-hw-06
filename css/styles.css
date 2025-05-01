@@ -286,7 +286,6 @@ ul {
     background: #f4f4fd;
     padding: 96px 0;
 }
-
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -362,9 +361,7 @@ ul {
 .team-social-link {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @media screen and (min-width: 768px) {
-
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -372,6 +369,14 @@ ul {
         justify-content: center;
     }    
 }
-
-
+@media screen and (min-width: 1158px) {    
+    .team-section {
+        padding: 120px 0;
+    }
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+        justify-content: center;
+    }
+}
 /* #endregion team */
