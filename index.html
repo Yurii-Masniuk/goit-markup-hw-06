@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- #region header -->
-    <header class="header">
+    <header class="header hidden">
       <div class="container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html"
@@ -84,7 +84,7 @@
       </section>
       <!-- #endregion heading -->
       <!-- #region features -->
-      <section class="features-section">
+      <section class="features-section hidden">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list">
@@ -141,13 +141,16 @@
       </section>
       <!-- #endregion features -->
       <!-- #region team -->
-      <section class="team-section">
+      <section class="team-section hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
-                srcset="./images/mark_guerrero.jpg 1x, ./images/mark_guerrero.jpg 2x"
+                srcset="
+                  ./images/mark_guerrero.jpg 1x,
+                  ./images/mark_guerrero.jpg 2x
+                "
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -233,7 +236,10 @@
             </li>
             <li class="team-item">
               <img
-                srcset="./images/camila_garcia.jpg 1x, ./images/camila_garcia.jpg 2x"
+                srcset="
+                  ./images/camila_garcia.jpg 1x,
+                  ./images/camila_garcia.jpg 2x
+                "
                 src="./images/camila_garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -276,7 +282,10 @@
             </li>
             <li class="team-item">
               <img
-                srcset="./images/daniel_wilson.jpg 1x, ./images/daniel_wilson.jpg 2x"
+                srcset="
+                  ./images/daniel_wilson.jpg 1x,
+                  ./images/daniel_wilson.jpg 2x
+                "
                 src="./images/daniel_wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -328,13 +337,30 @@
           <ul class="portfolio-title-list">
             <li class="portfolio-title-list-item">
               <div class="pict-name-app">
-                <img
-                  srcset="./images/banking_app.jpg 1x, ./images/banking_app.jpg 2x"
-                  src="./images/banking_app.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/banking_app_desk.jpg    1x,
+                      ./images/banking_app_desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/banking_app_tab.jpg    1x,
+                      ./images/banking_app_tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/banking_app_mob.jpg    1x,
+                      ./images/banking_app_mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/banking_app_mob.jpg" alt="Banking App" />
+                </picture>
                 <p class="p-name-app">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -348,13 +374,33 @@
             </li>
             <li class="portfolio-title-list-item">
               <div class="pict-name-app">
-                <img
-                  srcset="./images/cashless_payment.jpg 1x, ./images/cashless_payment.jpg 2x"
-                  src="./images/cashless_payment.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/cashless_payment_desk.jpg    1x,
+                      ./images/cashless_payment_desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/cashless_payment_tab.jpg    1x,
+                      ./images/cashless_payment_tab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/cashless_payment_mob.jpg    1x,
+                      ./images/cashless_payment_mob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/cashless_payment_mob.jpg"
+                    alt="Cashless Payment"
+                  />
+                </picture>
                 <p class="p-name-app">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -369,7 +415,10 @@
             <li class="portfolio-title-list-item">
               <div class="pict-name-app">
                 <img
-                  srcset="./images/meditation_app.jpg 1x, ./images/meditation_app.jpg 2x"
+                  srcset="
+                    ./images/meditation_app.jpg 1x,
+                    ./images/meditation_app.jpg 2x
+                  "
                   src="./images/meditation_app.jpg"
                   alt="Meditation App"
                   width="360"
@@ -389,7 +438,10 @@
             <li class="portfolio-title-list-item">
               <div class="pict-name-app">
                 <img
-                  srcset="./images/taxi_service.jpg 1x, ./images/taxi_service.jpg 2x"
+                  srcset="
+                    ./images/taxi_service.jpg 1x,
+                    ./images/taxi_service.jpg 2x
+                  "
                   src="./images/taxi_service.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -409,7 +461,10 @@
             <li class="portfolio-title-list-item">
               <div class="pict-name-app">
                 <img
-                  srcset="./images/screen_illustrations.jpg 1x, ./images/screen_illustrations.jpg 2x"
+                  srcset="
+                    ./images/screen_illustrations.jpg 1x,
+                    ./images/screen_illustrations.jpg 2x
+                  "
                   src="./images/screen_illustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -429,7 +484,10 @@
             <li class="portfolio-title-list-item">
               <div class="pict-name-app">
                 <img
-                  srcset="./images/online_courses.jpg 1x, ./images/online_courses.jpg 2x"
+                  srcset="
+                    ./images/online_courses.jpg 1x,
+                    ./images/online_courses.jpg 2x
+                  "
                   src="./images/online_courses.jpg"
                   alt="Online Courses"
                   width="360"
@@ -500,17 +558,22 @@
           <p class="footer-suscribe-heading">Subscribe</p>
           <form class="footer-form">
             <label class="footer-form-label" for="user-email-f">
-              <input class="footer-form-input" type="email" id="user-email-f" name="user-email-f" placeholder="E-mail">
+              <input
+                class="footer-form-input"
+                type="email"
+                id="user-email-f"
+                name="user-email-f"
+                placeholder="E-mail"
+              />
             </label>
-            <button class="footer-button" type="submit">Subscribe
+            <button class="footer-button" type="submit">
+              Subscribe
               <svg class="icon-footer" width="24" height="24">
-                <use href="./images/icons.svg#icon-subscribe">
-                </use>             
+                <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
             </button>
           </form>
         </div>
-        
       </div>
     </footer>
     <!-- #endregion footer -->
