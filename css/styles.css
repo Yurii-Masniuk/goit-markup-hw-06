@@ -523,12 +523,11 @@ button {
 .portfolio-list-item {
     margin-bottom: 8px;
 }
-.portfolio-title-list-item:hover {
+.portfolio-title-list-item {
     box-shadow:
         0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        0px 2px 1px rgba(46, 47, 66, 0.08);    
 }
 .portfolio-title-list-item h3 {
     font-weight: 500;
@@ -564,7 +563,16 @@ button {
     .portfolio-title-list {
         gap: 40px 24px;
     }
-
+    .portfolio-title-list-item {
+        box-shadow: none;
+    }
+    .portfolio-title-list-item:hover {
+        box-shadow:
+            0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }    
     .portfolio-title-list-item:hover .p-name-app,
     .portfolio-title-list-item:focus .p-name-app {
         transform: translateY(0%);
