@@ -414,7 +414,7 @@ button {
     flex-direction: column;
     gap: 72px;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
 }
 .team-item {
     max-width: 264px;
